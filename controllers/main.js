@@ -77,7 +77,7 @@ $(document).on('click', '.changStyle', function(e) {
                 updateGiayDepKieuTocTuiXachDayChuyen('kieutoc', matchedItem);
                 break;
             case 'background':
-                updateGiayDepKieuTocTuiXachDayChuyen('background', matchedItem);
+                updateBackground('background', matchedItem);
                 break;
             default:
                 break;
@@ -101,6 +101,12 @@ function updateAoQuan(elementId, matchedItem) {
 
 function updateGiayDepKieuTocTuiXachDayChuyen(elementId, matchedItem) {
     $('#' + elementId).css({
-        'background': 'url(' + matchedItem.imgSrc_png + ') no-repeat',
+        'background': 'url(' + matchedItem.imgSrc_png + ')',
+    });
+}
+
+function updateBackground(elementId, matchedItem) {
+    $('#' + elementId).css({
+        'background-image': 'url(' + matchedItem.imgSrc_png + ')',
     });
 }
