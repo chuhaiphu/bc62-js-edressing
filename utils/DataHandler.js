@@ -4,7 +4,7 @@ export default class DataHandler {
         this.loadData();
     }
     async loadData() {
-        this.data = await $.getJSON('../data/Data.json');
+        this.data = await $.getJSON('https://chuhaiphu.github.io/bc62-js-edressing/data/Data.json');
     }
 
     getListNavbar(data) {
