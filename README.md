@@ -5,8 +5,7 @@
 </div>
 
 <br/>
-
-Share Image is a platform to try clothes only for women.
+A platform to try clothes only for women.
 
 ## Preview
 
